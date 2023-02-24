@@ -1,21 +1,26 @@
 #include <iostream>
 using namespace std;
 
-unsigned long long int hang;
+typedef unsigned long long int ull;
+ull MOD = 1000000007;
+ull c, k;
+ull answer = 0;
 
-unsigned long long int zegop(int chasu) {
-	unsigned long long int ch = chasu;
-	unsigned long long int rtrn;
-	if (ch == 1) {
+ull zegop(ull ch) {
+	if (ch == 0) {
+		return 1;
+	}
+	else if (ch == 1) {
 		return 2;
 	}
-	else if (ch % 2 == 0) {
-		rtrn = ((zegop(ch / 2) % 1000000007) * (zegop(ch / 2) % 1000000007)) % 1000000007;
-		return rtrn;
-	}
 	else {
-		rtrn = ((zegop(ch / 2) % 1000000007) * (zegop(ch / 2) % 1000000007) * 2) % 1000000007;
-		return rtrn;
+		ull halfch = zegop(ch / 2);
+		if (ch % 2 == 0) {
+			return (halfch * halfch) % MOD;
+		}
+		else {
+			return (halfch * halfch * 2) % MOD;
+		}
 	}
 }
 
@@ -23,16 +28,13 @@ int main(void) {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
-	unsigned long long int n, c, k;
-	unsigned long long int answer = 0;
+	int n;
 	cin >> n;
 	for (int i = 0; i < n; i++) {
 		cin >> c >> k;
-		hang = 1;
-		if (k > 1) {
-			hang = ((hang % 1000000007) * (zegop(k - 1) % 1000000007)) % 1000000007;
+		if (k > 0) {
+			answer = (answer + zegop(k - 1) * (c * k % MOD)) % MOD;
 		}
-		answer += ((hang % 1000000007) * (c % 1000000007) * (k % 1000000007)) % 1000000007;
 	}
-	cout << answer % 1000000007;
+	cout << answer % MOD;
 }
