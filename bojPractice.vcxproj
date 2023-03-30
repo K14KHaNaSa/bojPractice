@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2490.cpp" />
+    <ClCompile Include="23795.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -97,8 +97,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <HeapReserveSize>
       </HeapReserveSize>
-      <StackReserveSize>
-      </StackReserveSize>
+      <StackReserveSize>104857600</StackReserveSize>
       <HeapCommitSize>
       </HeapCommitSize>
       <StackCommitSize>
