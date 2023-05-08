@@ -1,2 +1,2 @@
-﻿  17215.cpp
-  bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
+﻿  17281.cpp
+LINK : fatal error LNK1201: '' 프로그램 데이터베이스를 쓰는 동안 오류가 발생했습니다. 디스크 공간이 부족한지, 경로가 잘못되었는지 또는 권한이 없는지 확인하십시오.
