@@ -1,2 +1,4 @@
-﻿  17281.cpp
-LINK : fatal error LNK1201: '' 프로그램 데이터베이스를 쓰는 동안 오류가 발생했습니다. 디스크 공간이 부족한지, 경로가 잘못되었는지 또는 권한이 없는지 확인하십시오.
+﻿  27231.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\27231.cpp(12,32): warning C4244: '+=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\27231.cpp(59,41): warning C4244: '+=': 'double'에서 'unsigned __int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
