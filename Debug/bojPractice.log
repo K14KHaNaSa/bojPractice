@@ -1,5 +1,4 @@
-﻿  20010.cpp
-C:\Users\Jaewon\source\repos\bojPractice\bojPractice\20010.cpp(13,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\Jaewon\source\repos\bojPractice\bojPractice\20010.cpp(44,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\Jaewon\source\repos\bojPractice\bojPractice\20010.cpp(60,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+﻿  17472.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\17472.cpp(175,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\17472.cpp(185,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
