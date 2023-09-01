@@ -1,2 +1,3 @@
-﻿  15080.cpp
+﻿  3059.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\3059.cpp(12,13): warning C4101: 'ent' :참조되지 않은 지역 변수입니다.
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
