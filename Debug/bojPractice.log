@@ -1,2 +1,4 @@
-﻿  30087.cpp
+﻿  1010.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\1010.cpp(21,37): warning C4101: 'ans' :참조되지 않은 지역 변수입니다.
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\1010.cpp(21,42): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
