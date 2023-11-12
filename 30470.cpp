@@ -9,7 +9,7 @@ int main(void) {
 
     long long int n, a, b, same_len, magic, changed, ans;
     cin >> n;
-    stack<pair<long long int,long long int>> stair;
+    stack<pair<long long int, long long int>> stair;
     while (n--) {
         cin >> a >> b;
         if (a == 1) {
