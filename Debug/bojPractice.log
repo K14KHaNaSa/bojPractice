@@ -1,2 +1,3 @@
-﻿  15184.cpp
+﻿  31090.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\31090.cpp(15,80): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
