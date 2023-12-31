@@ -11,8 +11,6 @@ int main(void) {
     cin >> n;
     c = cin.get();
     while (n--) {
-        while (c != '\n')
-            c = cin.get();
         sl = 0;
         while (c != ' ') {
             c = cin.get();
@@ -24,12 +22,8 @@ int main(void) {
         sl = 0;
         while (c != '\n') {
             c = cin.get();
-            if (sl == x) {
-                if (c >= 'a' && c <= 'z')
-                    cout << char(c - ('a' - 'A'));
-                else
-                    cout << c;
-            }
+            if (sl == x)
+                if (c >= 'a' && c <= 'z' ? cout << char(c - ('a' - 'A')) : cout << c);
             sl++;
         }
     }
