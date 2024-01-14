@@ -1,2 +1,4 @@
-﻿  17388.cpp
+﻿  13910.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\13910.cpp(39,22): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\13910.cpp(46,55): warning C4390: ';': 제어된 빈 문이 있습니다. 이 문이 필요합니까?
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
