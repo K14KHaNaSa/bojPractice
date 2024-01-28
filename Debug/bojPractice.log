@@ -1,2 +1,4 @@
-﻿  8674.cpp
+﻿  17129.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\17129.cpp(35,27): warning C4305: '=': '__int64'에서 'int'(으)로 잘립니다.
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\17129.cpp(35,17): warning C4309: '=': 상수 값이 잘립니다.
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
