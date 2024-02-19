@@ -1,2 +1,4 @@
-﻿  1749.cpp
+﻿  31430_something_error.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\31430_something_error.cpp(17,22): warning C4244: '초기화 중': 'double'에서 '__int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\31430_something_error.cpp(30,22): warning C4244: '초기화 중': 'double'에서 '__int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
