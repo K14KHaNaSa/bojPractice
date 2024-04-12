@@ -10,7 +10,7 @@ int main(void) {
 	cin >> n >> m;
 	if (n < m || n % m>0) {
 		ans = 1;
-		while (n > 1) {
+		while (n > 1 && ans > 0) {
 			if (n % m == 0) {
 				cout << 0;
 				return 0;
