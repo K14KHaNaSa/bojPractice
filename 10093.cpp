@@ -6,12 +6,12 @@ int main(void) {
 	cin.tie(0);
 	cout.tie(0);
 
-	long long int a, b, l, r, i;
+	long long int a, b, l, r;
 	cin >> a >> b;
 	l = min(a, b);
 	r = max(a, b);
 	r - l > 1 ? cout << r - l - 1 : cout << 0;
 	cout << '\n';
-	for (i = l + 1; i < r; i++)
-		cout << i << ' ';
+	for (++l; l < r; l++)
+		cout << l << ' ';
 }
