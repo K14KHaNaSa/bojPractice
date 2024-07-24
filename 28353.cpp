@@ -24,6 +24,7 @@ int main(void) {
 				w[i] = k + 1; // pick
 				w[j] = k + 1; // cats
 				ans++;
+				break;
 			}
 		}
 	}
