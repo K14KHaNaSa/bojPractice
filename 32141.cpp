@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(void) {
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
+	int n, h, d;
+	int a = 0;
+	int ans = 1000001;
+	cin >> n >> h;
+	for (int i = 1; i <= n; i++) {
+		cin >> d;
+		if (ans > 1000000) {
+			a += d;
+			if (a >= h)
+				ans = i;
+		}
+	}
+	ans > 1000000 ? cout << -1 : cout << ans;
+}
