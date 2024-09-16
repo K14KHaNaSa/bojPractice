@@ -9,7 +9,7 @@ int main(void) {
 
 	int n, combo, ans;
 	char b;
-	stack<int> stk; // ( == 0 / ) == -1 // else = combo
+	stack<int> stk; // ( == -2 / ) == -1 // else = combo
 	bool closer = false; // )
 	cin >> n;
 	b = cin.get();
@@ -17,42 +17,37 @@ int main(void) {
 	while (n--) {
 		b = cin.get();
 		if (b == '(')
-			stk.push(0);
+			stk.push(-2);
 		else { // )
-			if (stk.empty()) {
-				stk.push(-1);
+			combo = 0;
+			closer = true;
+			while (!stk.empty()) {
+				if (stk.top() > 0) {
+					combo += stk.top();
+					stk.pop();
+				}
+				else if (stk.top() == -2) { // (
+					combo += 2;
+					stk.pop();
+					closer = false;
+					break;
+				}
+				else
+					break;
 			}
-			else {
-				closer = true;
-				combo = 0;
-				while (!stk.empty() && closer) {
-					if (stk.top() > 0) {
-						combo += stk.top();
-						stk.pop();
-					}
-					else if (stk.top() == 0) {
-						combo += 2;
-						stk.pop();
-						closer = false;
-					}
-					if (!closer || stk.empty())
-						break;
-					else if (stk.top() == -1)
-						break;
+			while (!stk.empty()) {
+				if (stk.top() > 0) {
+					combo += stk.top();
+					stk.pop();
 				}
-				while (!stk.empty()) {
-					if (stk.top() > 0) {
-						combo += stk.top();
-						stk.pop();
-					}
-					else
-						break;
-				}
-				ans = max(ans, combo);
+				else
+					break;
+			}
+			ans = max(ans, combo);
+			if (combo > 0)
 				stk.push(combo);
-				if (closer)
-					stk.push(-1);
-			}
+			if(closer)
+				stk.push(-1); // divider
 		}
 	}
 	cout << ans;
