@@ -1,4 +1,2 @@
-﻿  4351.cpp
-C:\Users\Jaewon\source\repos\bojPractice\bojPractice\4351.cpp(23,13): warning C4244: '인수': '__int64'에서 'const unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Jaewon\source\repos\bojPractice\bojPractice\4351.cpp(24,17): warning C4244: '인수': '__int64'에서 'const unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  20336.cpp
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
