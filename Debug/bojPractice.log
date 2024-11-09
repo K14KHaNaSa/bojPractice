@@ -1,2 +1,3 @@
-﻿  17912.cpp
+﻿  19969.cpp
+C:\Users\Jaewon\source\repos\bojPractice\bojPractice\19969.cpp(9,38): warning C4101: 't3' :참조되지 않은 지역 변수입니다.
   bojPractice.vcxproj -> C:\Users\Jaewon\source\repos\bojPractice\Debug\bojPractice.exe
