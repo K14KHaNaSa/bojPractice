@@ -1,5 +1,6 @@
 #include <iostream>
-#include <queue>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
 int main(void) {
@@ -7,22 +8,18 @@ int main(void) {
     cin.tie(0);
     cout.tie(0);
 
-    int n, x, ans, mx;
-    priority_queue<int> pq;
+    int n, ans, i;
     ans = 0;
     cin >> n;
-    while (n--) {
-        cin >> x;
-        pq.push(x * -1); // reverse
+    vector<int> x(n);
+    for (i = 0; i < n; i++) {
+        cin >> x[i];
     }
-    mx = 0;
-    while (!pq.empty()) {
-        if (mx == 0) {
-            mx = pq.top() * -1;
-            ans++;
-        }
-        pq.pop();
-        mx--;
+    sort(x.begin(), x.end());
+    i = 0;
+    while (i < n) {
+        i += x[i];
+        ans++;
     }
     cout << ans;
 }
