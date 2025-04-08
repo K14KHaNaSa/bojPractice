@@ -10,10 +10,10 @@ int n, r, q, u, v, i;
 int fill_ans(int u) {
     int sub_trees = 1;
     for (int j = 0; j < tree[u].size(); j++) {
-        int root_num = tree[u][j];
-        if (!visit[root_num]) {
-            visit[root_num] = true;
-            sub_trees += fill_ans(root_num);
+        int child_num = tree[u][j];
+        if (!visit[child_num]) {
+            visit[child_num] = true;
+            sub_trees += fill_ans(child_num);
         }
     }
     ans[u] = sub_trees;
