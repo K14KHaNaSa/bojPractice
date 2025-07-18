@@ -8,7 +8,5 @@ int main(void) {
 
     int n, a;
     cin >> n;
-    for (int i = 0; i < n; i++)
-        cin >> a;
     (n % 2 == 0) ? cout << "Alice" : cout << "Bob";
 }
