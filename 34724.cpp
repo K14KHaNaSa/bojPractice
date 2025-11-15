@@ -15,14 +15,12 @@ int main(void) {
         for (int j = 0; j < m; j++) {
             c = cin.get();
             x[i][j] = c;
-        }
-    }
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < m - 1; j++) {
-            if (x[i][j] == '1') {
-                if (x[i + 1][j] == '1' && x[i][j + 1] == '1' && x[i + 1][j + 1] == '1') {
-                    cout << 1;
-                    return 0;
+            if (i > 0 && j > 0) {
+                if (x[i][j] == '1') {
+                    if (x[i - 1][j] == '1' && x[i][j - 1] == '1' && x[i - 1][j - 1] == '1') {
+                        cout << 1;
+                        return 0;
+                    }
                 }
             }
         }
