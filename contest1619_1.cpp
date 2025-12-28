@@ -18,8 +18,11 @@ int main(void) {
             for (j = 1; j < 10 - i; j++) {
                 if (j + 1 > s.size())
                     break;
-                if (toy.substr(i + 1, j) == s.substr(s.size() - j, j))
+                if (toy.substr(i + 1, j) == s.substr(s.size() - j, j)) {
                     ok = j;
+                    // debug area
+                    cout << "!!" << ans << "/" << toy.substr(i + ok + 1, 10 - i - ok) << '\n';
+                }
             }
             ans += toy.substr(i + ok + 1, 10 - i - ok);
             tsy = true;
